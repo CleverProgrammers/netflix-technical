@@ -4,6 +4,8 @@ import axios from '../../axios'
 import style from '../../styles/home/Row.module.css'
 import YouTube from 'react-youtube'
 import movieTrailer from 'movie-trailer'
+// API 👇🏽
+// https://www.themoviedb.org/?language=en-US
 
 const posterBaseUrl = 'https://image.tmdb.org/t/p/original'
 

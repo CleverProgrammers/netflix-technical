@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import requests from '../../requests'
 import axios from '../../axios'
 import style from '../../styles/home/Hero.module.css'
+// API 👇🏽
+// https://www.themoviedb.org/?language=en-US
 
 const posterBaseUrl = 'http://image.tmdb.org/t/p/original'
 
