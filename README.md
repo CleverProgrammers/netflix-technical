@@ -29,7 +29,9 @@
 👉🏽 Fetch the data from the API and save to the 'movies' state. If the data is largeRow then use the data from the API: `poster_path` for the image. If the data is not largeRow then use the `backdrop_path` for the image.
 <br>
 👉🏽 Once you have the static data rendering and movies fetched from the API, replace the static data with the data from the API.
+
 <br>
+
 :warning: **Note:** Notice the `fetchUrl` prop that is being passed into the `Row` component. This is the dynamic API endpoint that you will need to use to get the data for each `Row` component. You will need to fetch the data from the API and save it to the `movies` state.
 
 <br>
