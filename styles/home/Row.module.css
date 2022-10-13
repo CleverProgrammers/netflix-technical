@@ -1,0 +1,30 @@
+.wrapper {
+  margin-left: 1.2rem;
+}
+
+.postersContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.postersContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.largePoster {
+  width: 23rem;
+  height: 18.8rem;
+  padding: 6.8rem;
+  margin: 0.6rem;
+}
+
+.smallPoster {
+  width: 6.2rem;
+  height: auto;
+  padding: 6.2rem;
+  margin: 0.6rem;
+}

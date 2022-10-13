@@ -1,0 +1,16 @@
+.appWrapper {
+  position: relative;
+}
+
+.loginButton {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  margin: 5px auto;
+  transition: 0.3s linear;
+  cursor: pointer;
+}

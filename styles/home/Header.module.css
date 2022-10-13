@@ -1,0 +1,55 @@
+.header {
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2rem;
+  padding-right: 3rem;
+}
+
+.logoContainer {
+  position: relative;
+  height: 2rem;
+  width: 6.8rem;
+}
+
+.profileImageContainer {
+  position: relative;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.profileImage {
+  background-color: #eee;
+}
+
+.black {
+  background-color: #111;
+  padding: 1rem 2rem;
+  padding-right: 3rem;
+}
+
+.loginButton {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 1rem 1.2rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  max-width: 18rem;
+  margin: 0.2rem auto;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
