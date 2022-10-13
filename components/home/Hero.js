@@ -11,8 +11,15 @@ const Hero = () => {
   const [movie, setMovie] = useState([])
 
   useEffect(() => {
-    // Fetch a random movie from the API
-    // Set the movie to the state.
+    ;(async () => {
+      const req = await axios.get(requests.fetchNetflixOriginals)
+
+      setMovie(
+        req.data.results[
+          Math.floor(Math.random() * req.data.results.length - 1)
+        ],
+      )
+    })()
   }, [])
 
   const truncate = (str, n) =>
@@ -23,7 +30,7 @@ const Hero = () => {
       className={style.wrapper}
       style={{
         backgroundSize: 'cover',
-        backgroundImage: `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVQQ8FJsAd3bLr_3pL4Wyf8WcZA-ZGn3WUg&usqp=CAU")`,
+        backgroundImage: `url(${posterBaseUrl}${movie?.backdrop_path})`,
         backgroundPosition: 'center center',
       }}
     >

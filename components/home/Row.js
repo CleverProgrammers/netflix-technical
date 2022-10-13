@@ -47,7 +47,9 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     <div className={style.wrapper}>
       <h2>{title}</h2>
 
-      <div className={style.postersContainer}>{/* Render Your data */}</div>
+      {/* 1. map through the movies */}
+      {/* 2. Conditionally render the styling for the large posters and small posters. */}
+      <div className={style.postersContainer}></div>
 
       {trailerUrl && <YouTube videoId={trailerUrl} opt={opts} />}
     </div>

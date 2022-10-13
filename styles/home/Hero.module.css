@@ -1,7 +1,15 @@
 .wrapper {
+  color: white;
+  object-fit: contain;
+  height: 37rem;
+  position: relative;
 }
 
 .contents {
+  margin-left: 2.2rem;
+  padding-top: 9rem;
+  height: calc(100% - 7rem);
+  width: 100%;
 }
 
 .title {
@@ -17,4 +25,11 @@
 }
 
 .fadeBottom {
+  height: 7rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }
