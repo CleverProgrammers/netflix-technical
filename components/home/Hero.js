@@ -11,15 +11,8 @@ const Hero = () => {
   const [movie, setMovie] = useState([])
 
   useEffect(() => {
-    ;(async () => {
-      const req = await axios.get(requests.fetchNetflixOriginals)
-
-      setMovie(
-        req.data.results[
-          Math.floor(Math.random() * req.data.results.length - 1)
-        ],
-      )
-    })()
+    // Fetch a random movie from the API
+    // Set the movie to the state.
   }, [])
 
   const truncate = (str, n) =>

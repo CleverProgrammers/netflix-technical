@@ -8,9 +8,6 @@ import movieTrailer from 'movie-trailer'
 const posterBaseUrl = 'https://image.tmdb.org/t/p/original'
 
 const Row = ({ title, fetchUrl, isLargeRow }) => {
-  // Create Static Data to render on the screen
-  // Data needed in the Row component: movie id and url image.
-
   const [movies, setMovies] = useState([])
   const [trailerUrl, setTrailerUrl] = useState('')
 
