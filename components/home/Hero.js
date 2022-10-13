@@ -5,8 +5,6 @@ import style from '../../styles/home/Hero.module.css'
 
 const posterBaseUrl = 'http://image.tmdb.org/t/p/original'
 
-//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVQQ8FJsAd3bLr_3pL4Wyf8WcZA-ZGn3WUg&usqp=CAU
-
 const Hero = () => {
   const [movie, setMovie] = useState([])
 
@@ -28,6 +26,7 @@ const Hero = () => {
       }}
     >
       <div className={style.contents}>
+        {/* Render the title of the video */}
         <h1 className={style.title}>Lorem ipsum</h1>
 
         <div>
@@ -36,6 +35,7 @@ const Hero = () => {
         </div>
 
         <h1 className={style.description}>
+          {/* Render the overview of the movie */}
           {truncate(
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloribus quia vitae ullam illo velit delectus inventore reprehenderit amet, placeat assumenda unde obcaecati. Sequi tempora a dolor culpa vel nulla',
             150,
