@@ -27,3 +27,5 @@
 👉🏽 Once you have the static data rendering, replace the static data with the data from the API.
 <br>
 :warning: **Note:** Notice the `fetchUrl` prop that is being passed into the `Row` component. This is the API endpoint that you will need to use to get the data for each `Row` component. You will need to fetch the data from the API and save it to the `movies` state.
+
+<br>
