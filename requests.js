@@ -1,4 +1,5 @@
 // Is it okay to store the API key in the code?
+// https://www.themoviedb.org/?language=en-US
 const apiKey = '79179b15957fb3ee0d928154505750ab'
 
 const requests = {
